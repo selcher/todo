@@ -1,10 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+	<title>Todo</title>
+
+	<link rel="stylesheet" href="css/pure-min.css"/>
+	<link rel="stylesheet" href="css/grids-responsive-min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+	<link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+
+	<style>
+
+		body {
+			background: rgba( 59, 0, 132, 1 );
+		}
+
+		#main-menu {
+			background-color: rgba( 255, 255, 255, 0.2 );
+		}
+
+		.main-menu-heading {
+			color: rgba( 255, 255, 255, 0.7 ) !important;
+		}
+
+		.menu-item-link {
+
+		}
+
+		.hide {
+			display : none;
+		}
+
+		.noBorder {
+			border: none;
+		}
+
+		.noBackground {
+			background-color: transparent;
+		}
+
+		.clearFloat{
+			clear: both;
+		}
+
+		.floatLeft {
+			float: left;
+		}
+
+		.cursor {
+			cursor: pointer;
+		}
+
+		.pure-menu a {
+			color: rgba( 0, 0, 0, 0.2 );
+		}
+
+		.colorPicker {
+			width: 15px;
+			height: 15px;
+			margin: 0 5px;
+			float: right;
+			border: none;
+			border-radius: 3px;
+			color: transparent !important;
+			cursor: pointer;
+		}
+
+		.todo-menu-container {
+			background-color: rgba( 255, 255, 255, 0.1 );
+		}
+
+		.todo-menu-container label {
+			margin-left: 10px;
+			display: inline-block;
+			color: white;
+		}
+
+		.todo-list-container {
+
+		}
+
+		.todo-box {
+			min-width: 285px;
+			margin: 10px;
+			float: left;
+			border: 1px solid rgba( 255, 255, 255, 0.2 );
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.todo-list ul {
+			padding: 2px 10px;
+			list-style: none;
+		}
+
+		.todo-label {
+			padding: 5px;
+			background-color: rgba( 255, 255, 255, 0.2 );
+		}
+
+		.todo-label i {
+			margin-right: 5px;
+			cursor: pointer;
+		}
+
+		.todo-add-input {
+			padding: 2px !important;
+			font-size: 10px;
+			background-color: rgba( 255, 255, 255, 0.8 );
+		}
+
+		.todo-item {
+			padding: 5px;
+			line-height: 15px;
+			border-radius: 8px;
+		}
+
+		.todo-item:hover {
+			background-color: rgba( 255, 255, 255, 0.1 );
+		}
+
+		.todo-item-info {
+			width: 200px;
+			margin-left: 5px;
+			display: inline-block;
+			overflow-wrap: break-word;
+		}
+
+		.todo-item-add-form {
+			display: inline-block;
+			float: right;
+		}
+
+		.todo-item-remove-button {
+			float: right;
+			background: none;
+			border: none;
+		}
+
+		#save-storage-button, #save-file-button {
+			margin: 5px;
+			font-size: 14px;
+		}
+
+		#load-file-input {
+			margin: 5px;
+			font-size: 10px;
+		}
+
+		#add-todo-box-form {
+			display: inline-block;
+			font-size: 13px;
+		}
+
+	</style>
+
 </head>
 
 <body>
-	under maintenance
+
+	<!-- nav -->
+	<div>
+
+		<nav id="main-menu" class="pure-menu pure-menu-open pure-menu-horizontal">
+
+			<a href="/" class="pure-menu-heading main-menu-heading">Home</a>
+
+		   <ul class="menu-list">
+		      <li class="pure-menu-selected"><a class="menu-item-link" href="#">Todo</a></li>
+		   </ul>
+
+		</nav>
+
+	</div>
+
+	<!-- content -->
+	<div id="app"></div>
+
+	<!-- Scripts -->
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+	<!-- ReactJS -->
+	<script type="text/javascript" src="js/react-with-addons.min.js"></script>
+
+	<!-- FileSaver -->
+	<script type="text/javascript" src="js/FileSaver.min.js"></script>
+
+	<!-- JSColor -->
+	<script type="text/javascript" src="js/jscolor.js"></script>
+
+	<!-- React Todo App -->
+	<script type="text/javascript" src="js/build/todo.js"></script>
+
 </body>
 
 </html>
